@@ -1,0 +1,38 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.day {
+  border-left: 10rpx solid rgb(17, 130, 236);
+  padding-left: 10rpx;
+}
+.day-d {
+  color: rgb(17, 130, 236);
+}
+.time {
+  padding: 10rpx;
+  font-size: 25rpx;
+  color: #666666
+}
+
+.time view {
+  margin-bottom: 6rpx;
+}
