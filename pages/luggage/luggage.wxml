@@ -1,0 +1,24 @@
+<view class="luggage">
+  <view class="part">
+    <view>身份证</view>
+    <view>毛巾</view>
+    <view>牙刷</view>
+    <view>拖鞋</view>
+    <view>防晒霜</view>
+    <view>防蚊液</view>
+    <view>晕车贴</view>
+    <view>充电宝</view>
+    <view>数据线</view>
+  </view>
+  <view class="part">
+    <view>相机</view>
+    <view>相机电池</view>
+    <view>相机充电器</view>
+    <view>gopro</view>
+    <view>gopro电池(3)</view>
+    <view>gopro充电器</view>
+    <view>平衡器</view>
+    <view>平衡器充电器</view>
+    <view>清洁布</view>
+  </view>
+</view>

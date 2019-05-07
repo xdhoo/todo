@@ -1,0 +1,7 @@
+<view class="map">
+  <map id="map" 
+  longitude="122.2"
+  latitude="30.00"
+  scale="8"
+  polyline="{{polyline}}"/>
+</view>

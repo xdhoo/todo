@@ -1,0 +1,18 @@
+.luggage {
+  padding-top: 30rpx;
+}
+
+.part {
+  margin: 10rpx;
+  border-bottom: 6rpx solid #0ac504;
+  padding: 10rpx 0;
+}
+.part view {
+  display: inline-block;
+  background-color: rgb(108, 211, 224);
+  color: rgb(255, 255, 255);
+  padding: 8rpx 30rpx;
+  margin: 14rpx;
+  border-radius: 36rpx;
+  font-size: 30rpx;
+}

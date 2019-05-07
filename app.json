@@ -1,12 +1,33 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/luggage/luggage",
+    "pages/map/map"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
-  }
+  },
+  "tabBar": {
+    "custom": true,
+    "list": [
+      {
+        "pagePath":"pages/luggage/luggage",
+        "iconPath": "assets/luggage.png",
+        "selectedIconPath": "assets/luggage-a.png"
+      }, {
+        "pagePath": "pages/index/index",
+        "iconPath": "assets/car.png",
+        "selectedIconPath": "assets/car-a.png"
+      }, {
+        "pagePath":"pages/map/map",
+        "iconPath": "assets/map.png",
+        "selectedIconPath": "assets/map-a.png"
+      }
+    ]
+  },
+  "usingComponents": {}
 }
