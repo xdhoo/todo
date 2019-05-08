@@ -1,24 +1,18 @@
 <view class="luggage">
-  <view class="part">
-    <view>身份证</view>
-    <view>毛巾</view>
-    <view>牙刷</view>
-    <view>拖鞋</view>
-    <view>防晒霜</view>
-    <view>防蚊液</view>
-    <view>晕车贴</view>
-    <view>充电宝</view>
-    <view>数据线</view>
+  <view hover-class="button-hover" class="reset" bind:tap="reset">
+    <image src="../../assets/reset.png" />
   </view>
-  <view class="part">
-    <view>相机</view>
-    <view>相机电池</view>
-    <view>相机充电器</view>
-    <view>gopro</view>
-    <view>gopro电池(3)</view>
-    <view>gopro充电器</view>
-    <view>平衡器</view>
-    <view>平衡器充电器</view>
-    <view>清洁布</view>
+  <view class="part" wx:for="{{luggages}}" wx:for-index="partIdx" wx:for-item="partItem">
+    <view class="item" 
+      animation="{{item.opacity ? animationDataS : animationData}}"
+      style="opacity:{{item.opacity}}"
+      wx:for="{{partItem.items}}" 
+      wx:for-index="itemIdx"
+      wx:for-item="item"
+      bind:tap="remove" 
+      data-partIdx="{{partIdx}}"
+      data-itemIdx="{{itemIdx}}">
+      {{item.name}}
+    </view>
   </view>
 </view>

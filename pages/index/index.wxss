@@ -1,18 +1,28 @@
 /**index.wxss**/
-
+.container {
+  padding-top: 40rpx;
+}
 .day {
-  border-left: 10rpx solid rgb(17, 130, 236);
-  padding-left: 10rpx;
+  border-left: 10rpx solid rgb(88, 223, 228);
+  
 }
 .day-d {
-  color: rgb(17, 130, 236);
+  width: 130rpx;
+  background-color: rgb(88, 223, 228);
+  color: #ffffff;
+  border-radius: 0 2rpx 30rpx 0;
+  padding-left: 10rpx;
 }
 .time {
-  padding: 10rpx;
-  font-size: 25rpx;
+  padding: 10rpx 20rpx;
+  font-size: 26rpx;
   color: #666666
 }
 
 .time view {
-  margin-bottom: 6rpx;
+  margin: 15rpx 0;
+}
+.colock {
+  font-weight: bold;
+  padding-right: 12rpx;
 }

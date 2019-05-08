@@ -1,18 +1,42 @@
 .luggage {
-  padding-top: 30rpx;
+  padding-top: 40rpx;
 }
 
 .part {
-  margin: 10rpx;
-  border-bottom: 6rpx solid #0ac504;
-  padding: 10rpx 0;
+  margin: 20rpx;
+  border-bottom: 6rpx solid #04b8c5;
+  padding: 14rpx 0;
 }
 .part view {
   display: inline-block;
-  background-color: rgb(108, 211, 224);
+  background-color: #6cd3e0;
   color: rgb(255, 255, 255);
   padding: 8rpx 30rpx;
-  margin: 14rpx;
+  margin: 18rpx 14rpx;
   border-radius: 36rpx;
   font-size: 30rpx;
+}
+
+.reset {
+  position: absolute;
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50rpx;
+  right: 40rpx;
+  bottom: 140rpx;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: 8rpx 8rpx 5rpx #b9b8b8;
+  display: flex;
+  justify-content: center;
+  outline: none
+}
+.reset image {
+  height: 100rpx;
+  width: 100rpx;
+}
+.button-hover {
+  height: 90rpx;
+  width: 90rpx;
+  box-shadow: 10rpx 10rpx 5rpx #b9b8b8
 }
