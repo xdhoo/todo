@@ -12,7 +12,7 @@ Page({
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../stats/stats'
+      url: '../logs/logs'
     })
   },
   onLoad: function () {
@@ -47,7 +47,7 @@ Page({
     if (typeof this.getTabBar === 'function' &&
       this.getTabBar()) {
       this.getTabBar().setData({
-        selected: 2
+        selected: 1
       })
     }
   }

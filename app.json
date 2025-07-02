@@ -1,35 +1,31 @@
 {
-  "pages": [
+  "pages":[
     "pages/index/index",
     "pages/logs/logs",
     "pages/luggage/luggage",
-    "pages/map/map",
-    "pages/stats/stats",
-    "pages/record/record"
+    "pages/map/map"
   ],
-  "window": {
-    "backgroundTextStyle": "light",
+  "window":{
+    "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "TODO",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle":"black"
   },
   "tabBar": {
     "custom": true,
     "list": [
       {
-        "pagePath": "pages/record/record",
-        "iconPath": "assets/add.png",
-        "selectedIconPath": "assets/add_a.png"
-      },
-      {
-        "pagePath": "pages/stats/stats",
-        "iconPath": "assets/stats.png",
-        "selectedIconPath": "assets/stats_a.png"
-      },
-      {
+        "pagePath":"pages/luggage/luggage",
+        "iconPath": "assets/luggage.png",
+        "selectedIconPath": "assets/luggage-a.png"
+      }, {
         "pagePath": "pages/index/index",
-        "iconPath": "assets/mine.png",
-        "selectedIconPath": "assets/mine_a.png"
+        "iconPath": "assets/car.png",
+        "selectedIconPath": "assets/car-a.png"
+      }, {
+        "pagePath":"pages/map/map",
+        "iconPath": "assets/map.png",
+        "selectedIconPath": "assets/map-a.png"
       }
     ]
   },

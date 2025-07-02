@@ -1,4 +1,38 @@
 <!--index.wxml-->
 <view class="container">
-  
+  <view class="day">
+    <view class="day-d">05/28</view>
+    <view class='time'>
+      <view><text class="colock">05:00</text>  船票 沈家门 -- 庙子湖 08:45 06/07 卧铺 舟山星海</view>
+    </view>
+  </view>
+  <view class="day">
+    <view class="day-d">06/06</view>
+    <view class='time'>
+      <view><text class="colock">19:28</text> 上海 -- 杭州 (20:34) -- 宁波 G7557</view>
+      <view><text class="colock">22:00</text> 宁波 -- 沈家门</view>
+    </view>
+  </view>
+  <view class="day">
+    <view class="day-d">06/07</view>
+    <view class='time'>
+      <view><text class="colock">08:45</text> 沈家门码头 -- 庙子湖（购票） -- 青浜</view>
+    </view>
+  </view>
+  <view class="day">
+    <view class="day-d">06/08</view>
+    <view class='time'>
+      <view><text class="colock">05:00</text> 船票 庙子湖 -- 沈家门 11:15 06/09 东极海运</view>
+      <view><text class="colock">09:00</text> 青浜 -- 东福(码头购票)</view>
+    </view>
+  </view>
+  <view class="day">
+    <view class="day-d">06/09</view>
+    <view class='time'>
+      <view><text class="colock">09:15</text> 东福岛 -- 庙子湖(码头购票)</view>
+      <view><text class="colock">11:15</text> 庙子湖 -- 沈家门 2h 13:15抵达</view>
+      <view><text class="colock">14:35</text> 沈家门 -- 宁波 3h 17:35抵达</view>
+      <view><text class="colock">18:35</text> 宁波 -- 杭州 -- 上海 D3206</view>
+    </view>
+  </view>
 </view>
