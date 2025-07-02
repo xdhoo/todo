@@ -1,18 +1,18 @@
 Component({
   data: {
-    selected: 1,
+    selected: 2,
     list: [{
-      pagePath:"/pages/luggage/luggage",
-      iconPath: "/assets/luggage.png",
-      selectedIconPath: "/assets/luggage-a.png"
+      pagePath:"/pages/record/record",
+      iconPath: "/assets/add.png",
+      selectedIconPath: "/assets/add_a.png"
     }, {
-      pagePath: "/pages/index/index",
-      iconPath: "/assets/car.png",
-      selectedIconPath: "/assets/car-a.png"
+      pagePath: "/pages/stats/stats",
+      iconPath: "/assets/stats.png",
+      selectedIconPath: "/assets/stats_a.png"
     }, {
-      pagePath:"/pages/map/map",
-      iconPath: "/assets/map.png",
-      selectedIconPath: "/assets/map-a.png"
+      pagePath:"/pages/index/index",
+      iconPath: "/assets/mine.png",
+      selectedIconPath: "/assets/mine_a.png"
     }]
   },
   attached() {
