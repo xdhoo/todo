@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "i-calendar": "/components/calendar/i-calendar"
+  }
+}

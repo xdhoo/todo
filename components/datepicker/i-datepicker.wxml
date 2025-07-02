@@ -1,0 +1,22 @@
+<!--components/datepicker/i-datepicker.wxml-->
+
+<view class="date-picker">
+  <scroll-view scroll-x="true" scroll-into-view="{{toView}}" class="date-picker-row">
+      <view 
+      id="{{'id_' + index}}"
+      class="day {{day.$y + '-'+ (day.$M + 1) + '-' + day.$D === chooseDay && 'active'}}"
+      wx:for="{{dateList}}" 
+      wx:key="index" 
+      wx:for-item="day" 
+      wx:for-index="index" 
+      bind:tap="handleChoose"
+      data-day="{{day}}">
+        <view>
+          <text class="week">{{dayMap[day.$W]}}</text>
+        </view>
+       <View>
+        <text class="date">{{day.$D}}</text>
+       </View>
+      </view>
+  </scroll-view>
+</view>
