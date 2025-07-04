@@ -1,1 +1,35 @@
 /* pages/record/record.wxss */
+
+.record {
+  padding: 120rpx 36rpx 0;
+}
+
+.selected-date {
+  font-size: 48rpx;
+  font-weight: 700;
+  color: #575757
+}
+
+.head-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picker {
+  border: 1rpx solid #dadada;
+  border-radius: 14rpx;
+  padding: 12rpx 30rpx;
+}
+
+.date-block {
+  margin-top: 48rpx;
+}
+
+.btn {
+  margin: 48rpx 0rpx;
+  border-radius: 18rpx;
+  background: #09a9b1;
+  color: #fff
+}

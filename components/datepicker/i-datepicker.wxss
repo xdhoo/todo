@@ -1,7 +1,7 @@
 /* components/datepicker/i-datepicker.wxss */
 
 .date-picker {
-  padding: 0 24rpx;
+  /* padding: 0 24rpx; */
 }
 
 .date-picker-row {
@@ -10,7 +10,7 @@
 }
 
 .day {
-  width: 82rpx;
+  width: 80rpx;
   height: 92rpx;
   padding: 12rpx;
   /* flex-shrink: 0; */

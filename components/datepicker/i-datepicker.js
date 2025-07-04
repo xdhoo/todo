@@ -8,7 +8,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    chooseDate: {
+      type: String,
+      default: () => dayjs(new Date()).format('YYYY-M-D')
+    }
   },
 
   /**
@@ -18,7 +21,6 @@ Component({
     toView: '',
     dateList: util.generatorDateList('2024-11-01', new Date()),
     dayMap: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-    chooseDay: dayjs(new Date()).format('YYYY-M-D')
   },
   pageLifetimes: {
     show(){
@@ -32,12 +34,13 @@ Component({
    */
   methods: {
     handleChoose(event) {
-      const date = event.currentTarget.dataset.day
-      this.setData({chooseDay: `${date.$y}-${date.$M}-${date.$D}`});
+      const date = event.currentTarget.dataset.day;
+      const dateStr = `${date.$y}-${date.$M + 1}-${date.$D}`
+      this.triggerEvent('choose', dateStr);
     },
 
     isSameDay(day) {
-      return dayjs(day).isSame(chooseDay, 'day')
+      return dayjs(day).isSame(chooseDate, 'day')
     },
 
     handleScroll() {

@@ -1,3 +1,5 @@
+const dayjs = require("dayjs")
+
 // pages/record/record.js
 Page({
 
@@ -5,7 +7,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    chooseDate: dayjs(new Date()).format('YYYY-M-D'),
+    chooseDateDisp: dayjs(new Date()).format('DD MMM'),
+    types:['swim', 'tennis'],
+    type: 0,
   },
 
   /**
@@ -67,5 +72,17 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  handleDateChoose(e) {
+    this.setData({chooseDate: e.detail, chooseDateDisp: dayjs(e.detail).format('DD MMM')})
+  },
+  
+  pickChangeHandle(e) {
+    this.setData({type: e.detail.value})
+  },
+
+  recordHandle() {
+    
   }
 })

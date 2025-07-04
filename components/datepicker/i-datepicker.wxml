@@ -4,7 +4,7 @@
   <scroll-view scroll-x="true" scroll-into-view="{{toView}}" class="date-picker-row">
       <view 
       id="{{'id_' + index}}"
-      class="day {{day.$y + '-'+ (day.$M + 1) + '-' + day.$D === chooseDay && 'active'}}"
+      class="day {{day.$y + '-'+ (day.$M + 1) + '-' + day.$D === chooseDate && 'active'}}"
       wx:for="{{dateList}}" 
       wx:key="index" 
       wx:for-item="day" 

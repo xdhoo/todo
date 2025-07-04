@@ -1,4 +1,15 @@
 <!--pages/record/record.wxml-->
 <view class="record">
-  <i-datepicker/>
+  <view class="head-block">
+    <text class="selected-date">{{chooseDateDisp}}</text>
+    <picker bindchange="pickChangeHandle" value="{{type}}" range="{{types}}">
+      <view class="picker">
+        {{types[type]}}
+      </view>
+    </picker>
+  </view>
+  <view class="date-block">
+    <i-datepicker choose-date="{{chooseDate}}" bind:choose="handleDateChoose"/>
+  </view>
+  <button class="btn" bind:tap="recordHandle">Record</button>
 </view>
